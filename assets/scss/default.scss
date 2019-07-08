@@ -1,10 +1,84 @@
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    font-family: $font;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.card {
+    background: transparent;
+    border: 0;
+    .list-group {
+        padding-left: 24px;
+        .list-group-item {
+            background: transparent;
+            border: 0;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            opacity: .3;
+            &:nth-child(1) {
+                opacity: 1;
+                input {
+                    background: rgba(0, 0, 0, .5);
+                    border-color: rgba(0, 0, 0, 0);
+                    color: $white;
+                    &:focus {
+                        outline: 0 0 0 0;
+                        box-shadow: 0 0 0 0
+                    }
+                    &:active {
+                        outline: 0 0 0 0;
+                        box-shadow: 0 0 0 0
+                    }
+                }
+            }
+        }
+    }
+}
+
+nav {
+    background-color: transparent;
+    .nav-item {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $white;
+        opacity: .3;
+        letter-spacing: 2px;
+    }
+    .active {
+        color: $bluec!important;
+        opacity: 1;
+    }
+}
+
+.jumbotron {
+    background: transparent;
+    .icon {
+        height: 32px;
+        width: 32px;
+        color: $white;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 50px;
+        text-align: center;
+        position: relative;
+        float: left;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-right: 16px;
+    }
+}
+
 @media screen and (min-width: $xs) {}
 
 @media screen and (min-width: $sm) {}
 
 @media screen and (min-width: $md) {}
 
-@media screen and (min-width: $lg) {
-}
+@media screen and (min-width: $lg) {}
 
 @media screen and (min-width: $xl) {}

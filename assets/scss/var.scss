@@ -1,16 +1,14 @@
-$pink: #A18CB4;
-$black: #292C33;
-$grey: #95A2BB;
+$bluec: #578ea3;
+$green: #62a053;
+$blued: #97b2d0;
 $white: #FFFFFF;
-$ouro: #ADB167;
-
+$black: #0000;
 $xl: 1200px;
 $lg: 992px;
 $md: 768px;
 $sm: 576px;
 $xs: 0px;
-
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
-$font: 'Inconsolata', monospace;
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+$font: 'Open Sans',
+sans-serif;
 $transition: .35s ease-in-out;

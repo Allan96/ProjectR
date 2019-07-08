@@ -2,26 +2,31 @@
     .c-#{$class} {
         color: $color !important;
     }
-    .c-#{$class}-event:hover, .c-#{$class}-event:active, .c-#{$class}-event:focus {
+    .c-#{$class}-event:hover,
+    .c-#{$class}-event:active,
+    .c-#{$class}-event:focus {
         color: $color !important;
     }
     .bgc-#{$class} {
         background-color: $color !important;
     }
-    .bgc-#{$class}-event:hover, .bgc-#{$class}-event:active, .bgc-#{$class}-event:focus {
+    .bgc-#{$class}-event:hover,
+    .bgc-#{$class}-event:active,
+    .bgc-#{$class}-event:focus {
         background-color: $color !important;
     }
     .bdc-#{$class} {
         border-color: $color !important;
     }
-    .bdc-#{$class}-event:hover, .bdc-#{$class}-event:active, .bdc-#{$class}-event:focus {
+    .bdc-#{$class}-event:hover,
+    .bdc-#{$class}-event:active,
+    .bdc-#{$class}-event:focus {
         border-color: $color !important;
     }
 }
 
-
-@include defineColor('pink', $pink);
-@include defineColor('black', $black);
-@include defineColor('grey', $grey);
+@include defineColor('bluec', $bluec);
+@include defineColor('green', $green);
+@include defineColor('blued', $blued);
 @include defineColor('white', $white);
-@include defineColor('ouro', $ouro);
+@include defineColor('black', $black);
