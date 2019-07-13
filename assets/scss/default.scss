@@ -289,6 +289,21 @@ nav {
     transform: skew(10deg);
     overflow: hidden;
     margin-bottom: 8px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        &:before {
+            content: "";
+            top: 0;
+            right: 0;
+            position: absolute;
+            height: 50px;
+            background: rgba(0, 0, 0, .5);
+            width: 100%;
+            z-index: 9999;
+        }
+    }
     &:nth-child(1) {
         transform: skew(-10deg);
         border-top-left-radius: 0;
@@ -326,11 +341,21 @@ nav {
     }
 }
 
-@media screen and (min-width: $xs) {}
+@media screen and (min-width: $xs) {
+    .cardradio {
+        height: 50px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+}
 
 @media screen and (min-width: $sm) {}
 
 @media screen and (min-width: $md) {
+    h2 {
+        font-size: 24px;
+    }
     .twitter-feed {
         min-height: 100vh!important;
         max-height: 100vh!important;
@@ -342,6 +367,9 @@ nav {
         max-width: 100vh;
         display: none;
         overflow: hidden;
+    }
+    .cardradio {
+        height: 150px;
     }
 }
 
