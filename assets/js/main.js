@@ -1,10 +1,12 @@
 $('.flutuante').click(function(e) {
     e.preventDefault();
-    var isClass = $('.twitter-feed').hasClass('d-block');
+    var isClass = $('.twitter-feed').hasClass('active');
     if (isClass) {
-        $('.twitter-feed').removeClass('d-block');
+        $('.twitter-feed').removeClass('active')
+        $('.twitter-feed').fadeOut();
     } else {
-        $('.twitter-feed').addClass('d-block');
+        $('.twitter-feed').addClass('active');
+        $('.twitter-feed').fadeIn();
     }
 
 });

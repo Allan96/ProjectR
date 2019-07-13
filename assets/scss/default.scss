@@ -254,17 +254,18 @@ nav {
 }
 
 .twitter-feed {
-    height: 100vh;
-    min-width: 500px;
+    min-height: 100vh;
+    min-width: calc(100vw - 18px);
     overflow-x: hidden;
     position: absolute;
     z-index: 5;
     background: #292f33;
     max-width: 100vh;
+    display: none;
 }
 
 .flutuante {
-    position: absolute;
+    position: fixed;
     bottom: 15px;
     left: 15px;
     border-radius: 100%;
@@ -283,11 +284,66 @@ nav {
     }
 }
 
+.proximasmusicas {
+    border-radius: 3px;
+    transform: skew(10deg);
+    overflow: hidden;
+    margin-bottom: 8px;
+    &:nth-child(1) {
+        transform: skew(-10deg);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-radius: 3px;
+        .image {
+            background: radial-gradient(circle, rgba(32, 71, 86, 0.6) 31%, rgba(23, 39, 54, 0.6) 65%), url(../images/mc_7_belo.png)!important;
+            background-position: center, 0 -30px!important;
+            background-size: cover, 100% auto!important;
+            transform: skew(10deg);
+        }
+    }
+    &:nth-child(2) {
+        transform: skew(10deg);
+        .image {
+            background: radial-gradient(circle, rgba(32, 71, 86, 0.6) 31%, rgba(23, 39, 54, 0.6) 65%), url(../images/mc_livinho.jpg)!important;
+            background-position: center, 0 -30px!important;
+            background-size: cover, 100% auto!important;
+            transform: skew(-10deg);
+        }
+    }
+    &:nth-child(3) {
+        transform: skew(-10deg);
+        .image {
+            background: radial-gradient(circle, rgba(32, 71, 86, 0.6) 31%, rgba(23, 39, 54, 0.6) 65%), url(../images/mc_kitinho.jpg)!important;
+            background-position: center, 0 -30px!important;
+            background-size: cover, 100% auto!important;
+            transform: skew(10deg);
+        }
+    }
+    .image {
+        height: 50px;
+        width: calc( 100% + 36px);
+        margin: 0 -18px;
+    }
+}
+
 @media screen and (min-width: $xs) {}
 
 @media screen and (min-width: $sm) {}
 
-@media screen and (min-width: $md) {}
+@media screen and (min-width: $md) {
+    .twitter-feed {
+        min-height: 100vh!important;
+        max-height: 100vh!important;
+        min-width: 500px;
+        overflow-x: hidden;
+        position: absolute;
+        z-index: 5;
+        background: #292f33;
+        max-width: 100vh;
+        display: none;
+        overflow: hidden;
+    }
+}
 
 @media screen and (min-width: $lg) {}
 
