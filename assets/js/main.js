@@ -34,3 +34,15 @@ $('.borda-dentro').click(function(e) {
         $('.buttonPP').addClass('pause');
     }
 });
+
+function Musicas() {
+    $.ajax({
+        type: "method",
+        url: "http://genesis.pixservers.com//api/nowplaying/1",
+        dataType: "json",
+        success: function(response) {
+            console.log(response);
+
+        }
+    });
+}
