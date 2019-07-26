@@ -37,7 +37,7 @@ $('.borda-dentro').click(function(e) {
 
 function Musicas() {
     $.ajax({
-        type: "method",
+        type: "GET",
         url: "http://genesis.pixservers.com//api/nowplaying/1",
         dataType: "json",
         success: function(response) {
