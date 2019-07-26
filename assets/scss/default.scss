@@ -3,6 +3,7 @@ body {
     font-family: "Open Sans", sans-serif;
     background: linear-gradient(0deg, rgba(0, 0, 0, .9) 31%, rgba(0, 0, 0, 0) 100%), url(../images/bg.jpg);
     min-height: 100vh;
+    font-weight: 300;
 }
 
 .upper {
@@ -18,11 +19,11 @@ body {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .extrabold {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 hr {
@@ -255,13 +256,11 @@ nav {
 
 .twitter-feed {
     min-height: 100vh;
-    min-width: calc(100vw - 18px);
-    overflow-x: hidden;
-    position: absolute;
+    position: fixed;
     z-index: 5;
     background: #292f33;
-    max-width: 100vh;
-    display: none;
+    width: 100vw;
+    left: -100vw
 }
 
 .flutuante {
@@ -359,14 +358,11 @@ nav {
     .twitter-feed {
         min-height: 100vh!important;
         max-height: 100vh!important;
-        min-width: 500px;
-        overflow-x: hidden;
-        position: absolute;
+        width: 500px;
+        position: fixed;
         z-index: 5;
         background: #292f33;
-        max-width: 100vh;
-        display: none;
-        overflow: hidden;
+        left: -500px
     }
     .cardradio {
         height: 150px;
